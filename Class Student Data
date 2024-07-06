@@ -1,0 +1,58 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+class Student
+{
+    int roll;
+    char first_name[10];
+    char last_name[10];
+    int standerd;
+    
+    public:
+     
+  void integer()
+  {
+      
+      cin>>roll;
+  }
+
+void Strings()
+{
+  
+    cin>>first_name;
+    
+    cin>>last_name;
+}
+
+void standerdfunction()
+{
+    
+    cin>>standerd;
+}
+
+void Display()
+{
+   
+    cout<<roll<<" ";
+    cout<<first_name<<" ";
+    cout<<last_name<<" ";
+    cout<<standerd;
+}
+
+
+};
+int main() 
+{
+    Student st;
+          st.integer();
+          st.Strings();
+          st.standerdfunction();
+          st.Display();
+
+    
+    return 0;
+}
