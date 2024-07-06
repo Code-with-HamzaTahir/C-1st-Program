@@ -1,15 +1,8 @@
-/*******************************************
-Statement - Print Hello World
-Programmer - Vineet Choudhary
-Written For - http://developerinsider.in
-********************************************/
-
-#include <stdio.h>
-#include <conio.h>
+#include <iostream.h>
+using namespace std;
 
 void main()
 {
-	clrscr();
-	printf("Hello world\n");
-	getch();
+	cout<< "Hello World";
+return 0;
 }
