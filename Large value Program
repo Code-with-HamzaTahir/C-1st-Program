@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+void Large()
+{
+    int a, b, c, d;
+    cin>>a;
+    cin>>b;
+    cin>>c;
+    cin>>d;
+    
+    if(a>b && a>c && a>d)
+    {
+        cout<<a;
+    }
+    if(b>a && b>c && b>d)
+    {
+        cout<<b;
+    }
+    if(c>b && c>a && c>d)
+    {
+        cout<<c;
+    }
+    if(d>b && d>c && d>a)
+    {
+        cout<<d;
+    }
+    
+}
+
+int main() {
+    Large();
+    return 0;
+}
