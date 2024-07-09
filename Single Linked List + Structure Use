@@ -1,0 +1,38 @@
+#include<iostream.h>
+#include<conio.h>
+
+struct Node {
+    int data;
+    Node *next;
+};
+
+Node *head = NULL; // Correctly declare head as a pointer to Node
+
+void insert(int n) {
+    Node *newNode = new Node;
+    newNode->data = n;
+    newNode->next = head;
+    head = newNode;
+}
+
+void print() {
+    cout << "Data elements in a singly linked list are: ";
+    Node *temp = head;
+    while (temp != NULL) {
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
+}
+
+void main() {
+    clrscr(); // Clear screen
+
+    insert(1);
+    insert(2);
+    insert(3);
+    insert(4);
+    insert(11);
+    print();
+
+    getch(); // Wait for a key press
+}
