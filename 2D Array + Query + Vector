@@ -1,0 +1,29 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int n, q;
+    cin >> n >> q; // Read the number of arrays and queries
+
+    vector<vector<int>> arrays(n); // Vector to hold the arrays
+
+    // Read each array
+    for (int i = 0; i < n; i++) {
+        int k;
+        cin >> k; // Read the length of the current array
+        arrays[i].resize(k); // Resize the vector to hold k elements
+        for (int j = 0; j < k; j++) {
+            cin >> arrays[i][j]; // Read the elements of the current array
+        }
+    }
+
+    // Process each query
+    for (int i = 0; i < q; i++) {
+        int a, b;
+        cin >> a >> b; // Read the indices for the query
+        cout << arrays[a][b] << endl; // Print the requested element
+    }
+
+    return 0;
+}
